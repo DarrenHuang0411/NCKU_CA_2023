@@ -1,3 +1,9 @@
+main(){
+    fp32_to_bf16(100.234);
+    return 0;
+};
+
+
 float fp32_to_bf16(float x)                 
 {
     float y = x;
@@ -20,4 +26,4 @@ float fp32_to_bf16(float x)
     *p &= 0xFFFF0000;
 
     return y;
-}
+};
